@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+/* HEADER */
+#header {
+    background: #000;
+    padding: 40px 0;
+    position: relative;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* TOP BAR: SOCIAL ICONS + NAV */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* NAVIGATION */
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s; 
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* HEADER CONTENT */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-text {
+    max-width: 600px;
+}
+
+.header-text h1{
+    font-family: 'Playfair Display', serif; /* elegant font for heading */
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.header-text h1 span{
+    color:#ff0051;
+    font-family: 'Playfair Display', serif; /* elegant font for heading */
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 20px;
+
+}
+            
+.header-text p {
+    font-family: 'Poppins', sans-serif;   /* clean body text */
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #ddd;
+}
+
+.highlight {
+    color: #ff004f;
+    font-weight: 600;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff004f;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* PROFILE IMAGE */
+.profile {
+    height: 70vh;
+    object-fit: contain;
+    border: 4px solid #ff6b6b;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* CERTIFICATES */
+#certificates {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#certificates h2 {
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.cert-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cert-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    padding: 15px 20px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.cert-box img {
+    width: 22px;
+    margin-left: 10px;
+}
+
+.cert-box:hover {
+    border-color: #ff004f;
+    transform: translateY(-3px);
+}
+
+/* ------------ABOUT SECTION------------------ */
+#about {
+    padding: 100px 80px;
+}
+
+.row {
+    display: flex;
+    align-items: center;   /* Fix vertical alignment */
+    justify-content: flex-start;
+    gap: 100px; 
+
+}
+
+
+.about-cal-1 img {
+    max-width: 260px;   /* Smaller image */
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+.highlightabout {
+    
+    font-style: italic;       /* makes the text italic */
+    font-weight: normal;      /* optional, ensures it’s not bold */
+}
+
+/* About Me section heading */
+.about-cal-2 h1 {
+    font-family: 'Playfair Display', serif; /* elegant font for heading */
+    font-weight: 700;
+    font-style: normal;
+    color: #fff;
+    margin-bottom:0px;
+}
+
+/* About Me section paragraphs */
+.about-cal-2 p {
+    font-family: 'Poppins', sans-serif;   /* clean body text */
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #ddd;
+}
+
+/* ------------Skills & Tools-----------------
+
+
+#skills {
+    padding: 80px 80px;
+    background: #111;  
+    color: #fff;
+}
+
+#skills h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.skills-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-pill {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;  
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.skill-pill:hover {
+    background: #ff004f;
+    color: #fff;
+    transform: translateY(-3px);
+}
+*/
+
+/* SKILLS & TOOLS SECTION */
+#skills {
+    padding: 80px 80px;
+    background: #111;  /* dark background */
+    color: #fff;
+}
+
+#skills h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Grid layout for skill items */
+.skills-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* Individual skill boxes */
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.skill-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.skill-item:hover {
+    background: #ff004f;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    #skills h2 {
+        font-size: 28px;
+    }
+
+    .skill-item {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .skill-item img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* Skills note text */
+.skills-note {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.skills-note a {
+    color: #ff004f;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.skills-note a:hover {
+    text-decoration: underline;
+}
