@@ -585,9 +585,9 @@ nav ul li a:hover::after {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 900px) {
-    .contact-container {
-        flex-direction: column;
+@media (max-width: 900px) {
+    #contact {
+        padding: 50px 20px;
     }
 }
 
@@ -698,5 +698,6 @@ nav ul li a:hover::after {
         font-size: 18px;
     }
 }
+
 
 
