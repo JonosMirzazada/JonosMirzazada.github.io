@@ -391,14 +391,27 @@ nav ul li a:hover::after {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 850px) {
     .about-container {
         flex-direction: column;
         text-align: center;
+        gap: 30px;
+    }
+
+    .about-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-left img {
+        width: 70%;
+        max-width: 280px;
     }
 
     .about-right {
-        max-width: 90%;
+        text-align: center;
     }
 }
 
@@ -698,6 +711,7 @@ nav ul li a:hover::after {
         font-size: 18px;
     }
 }
+
 
 
 
