@@ -712,6 +712,18 @@ nav ul li a:hover::after {
     }
 }
 
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #111;
+    margin-top: 0px;
+    font-size: 13px;
+    font-family: 'Playfair Display', serif;
+}
+
+.copyright-symbol {
+    color: #e60047;
+}
 
 
 
